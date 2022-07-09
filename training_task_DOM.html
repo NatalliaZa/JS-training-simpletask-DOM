@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- Создать разметку с заголовком и произвольным количеством параграфов на странице. 
+    Затем с помощью JS генерируем случайное число, в зависимости от которого нужный параграф каждую секунду становится красным. -->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo asperiores odio doloremque at eaque ducimus libero saepe incidunt. Id tenetur amet magnam dolorem totam officiis est ratione placeat nobis ipsa?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo asperiores odio doloremque at eaque ducimus libero saepe incidunt. Id tenetur amet magnam dolorem totam officiis est ratione placeat nobis ipsa?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo asperiores odio doloremque at eaque ducimus libero saepe incidunt. Id tenetur amet magnam dolorem totam officiis est ratione placeat nobis ipsa?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo asperiores odio doloremque at eaque ducimus libero saepe incidunt. Id tenetur amet magnam dolorem totam officiis est ratione placeat nobis ipsa?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo asperiores odio doloremque at eaque ducimus libero saepe incidunt. Id tenetur amet magnam dolorem totam officiis est ratione placeat nobis ipsa?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo asperiores odio doloremque at eaque ducimus libero saepe incidunt. Id tenetur amet magnam dolorem totam officiis est ratione placeat nobis ipsa?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo asperiores odio doloremque at eaque ducimus libero saepe incidunt. Id tenetur amet magnam dolorem totam officiis est ratione placeat nobis ipsa?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo asperiores odio doloremque at eaque ducimus libero saepe incidunt. Id tenetur amet magnam dolorem totam officiis est ratione placeat nobis ipsa?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo asperiores odio doloremque at eaque ducimus libero saepe incidunt. Id tenetur amet magnam dolorem totam officiis est ratione placeat nobis ipsa?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo asperiores odio doloremque at eaque ducimus libero saepe incidunt. Id tenetur amet magnam dolorem totam officiis est ratione placeat nobis ipsa?</p>
+<script>
+
+        let round = Math.ceil(Math.random()*10);
+        let el = document.querySelectorAll('p');
+        let count = 0;
+        console.log(round);
+        
+        setInterval(changeColor, 1000); 
+
+        function changeColor() {
+            if (count % 2 == 0) el[round].style.color = 'red';
+            else el[round].style.color = 'black';
+            count++;
+        }
+
+
+</script>
+
+</body>
+</html>
